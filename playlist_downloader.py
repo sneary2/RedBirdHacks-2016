@@ -37,7 +37,7 @@ def download_songs_from_arbitrary_site(url):
     folder_name = os.path.join('static', re.sub('[^0-9A-Za-z_-]', '_', url))
     if not os.path.isdir(folder_name):
         output_format = os.path.join(folder_name, '%(title)s-%(id)s.%(ext)s')
-        rv = subprocess.call(['youtube-dl', '--audio-format', 'mp3', '-o', output_format, url])
+        rv = subprocess.call(['youtube-dl', '-x', '--audio-format', 'mp3', '-o', output_format, url])
     else:
         # simple caching
         rv = 0

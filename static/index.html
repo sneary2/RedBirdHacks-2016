@@ -30,18 +30,15 @@
             <div class="fade-background">
                 <div id="page1" class="main-div page">
                     <img id="main-logo" class="main-logo" src="logo.png">
-                    <p class="description">Synesthesia lets you find a playlist for any situation! Just upload a picture </p>
+                    <p class="description">Music for your Eyes!</p>
                     <h2 class="sub_heading">Try It Out!</h2>
                     <div class="input_field">
-                        <input id="image_url" name="image_url" class="" placeholder="Paste your link here...">
-                        <a id="submit_image_button" class="">
-                            Create Playlist
-                        </a>
                         <a id="facebook_image_button" class="" onclick="loginToFb();">
                             Facebook Login
                         </a>
                     </div>
                  </div>
+               </div>
                  <div id="page2" class="page2">
 		    <div id="container">
 		        <img id="loading" src="loading.gif">
@@ -55,7 +52,6 @@
 		    </div>
 		    <script language="JavaScript" type="text/javascript" src="index_fb.js"></script>
                 </div>
-            </div>
             <!-- Page 3 displays the results-->
             <div id="page3" class="page3">
                 <h2 class="Sub-heading">Try out these playlists</h2>
@@ -72,6 +68,22 @@
 -->
             <!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
             <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+            <div id="player-area"> 
+            <script>
+              MRP.insert({
+              'url':'',
+              'codec':'mp3',
+              'volume':100,
+              'autoplay':false,
+              'buffering':5,
+              'title':'Synesthesia',
+              'bgcolor':'#FFFFFF',
+              'skin':'mcclean',
+              'width':180,
+              'height':60
+              });
+            </script>
+            </div>
             <!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
             </div>
 

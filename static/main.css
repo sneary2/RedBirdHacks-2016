@@ -148,14 +148,16 @@ body {
     margin-bottom: 50x
 }
 .input_field {
-    width: 65%;
+    width: 30%;
 }
 .input_field #submit_image_button {
-    width: 49%;
-    margin-right: 2%;
+/*    width: 49%;
+    margin-right: 2%;*/
+    width: 0%
 }
 .input_field #facebook_image_button {
-    width: 49%
+/*    width: 49% */
+    width: 100%
 }
 .input_field input {
     width: 100%;
