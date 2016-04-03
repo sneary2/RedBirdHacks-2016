@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="image-picker/image-picker/image-picker.css">
         <script language="JavaScript" type="text/javascript" src="image-picker/image-picker/image-picker.min.js"></script>
         <link rel="stylesheet" href="index.css">
-        <script language="JavaScript" type="text/javascript" src="clarifai.js"></script>
+<!--        <script language="JavaScript" type="text/javascript" src="clarifai.js"></script> -->
         <script language="JavaScript" type="text/javascript" src="index.js"></script>
         <!-- JavaScript -->
         <link rel="stylesheet" href="main.css" type="text/css">
@@ -70,6 +70,9 @@
                     <a class="finished" id="finished" href="https://photoverse-.herokuapp.com/#">I want to try it again!</a>
                 </div>
 -->
+            <!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+            <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+            <!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
             </div>
 
         </center>
@@ -77,6 +80,18 @@
     <script src="socket.io.js"></script>
     <script src="main.js"></script>
     <script src="index_fb.js"></script>
+    <script language="JavaScript">
+     $.ajax({
+       'url': '/songs_by_tag',
+       'data': {'tag': 'japanese'},
+       'type': 'POST'
+     })
+     .then(function(r) {
+       var song = '/' + r['folder-name'] + '/' + r.songs[0];
+
+       console.log(r);
+     }); 
+    </script>
 
 
 </body></html>

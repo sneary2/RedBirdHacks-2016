@@ -13,9 +13,9 @@ img.image_picker_image {
   display: none;
 }
 #loading {
-  position: fixed;
+  position: relative;
   z-index: 10000;
-  left: calc(50% - 100px);
+  left: 0px;
   top: 50px;
   width: 200px;
   height: 200px;
