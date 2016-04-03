@@ -1,15 +1,18 @@
 
 <!-- saved from url=(0035)https://photoverse-.herokuapp.com/# -->
 <html>
-<<<<<<< HEAD
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <!-- CSS -->
-        <link rel="stylesheet" href="main.css">
-        <!-- JavaScript -->
-        <!-- <link rel="stylesheet" href="../assets/stylesheets/main.css" type="text/css"> -->
         <!-- jQuery -->
-        <script src="jquery-2.2.0.min.js"></script>
+        <script src="static/jquery-2.2.0.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="static/image-picker/image-picker/image-picker.css">
+        <script language="JavaScript" type="text/javascript" src="static/image-picker/image-picker/image-picker.min.js"></script>
+        <link rel="stylesheet" href="static/index.css">
+        <script language="JavaScript" type="text/javascript" src="static/clarifai.js"></script>
+        <script language="JavaScript" type="text/javascript" src="static/index.js"></script>
+        <!-- JavaScript -->
+        <link rel="stylesheet" href="static/main.css" type="text/css">
         <!-- JavaScript -->
         <!-- // <script src="js/main.js"></script> -->
     </head>
@@ -28,7 +31,7 @@
             <!-- Page 1 Is the title page -->
             <div class="fade-background">
                 <div id="page1" class="main-div page">
-                    <img id="main-logo" class="main-logo" src="logo.png">
+                    <img id="main-logo" class="main-logo" src="static/logo.png">
                     <p class="description">Synesthesia lets you find a playlist for any situation! Just upload a picture </p>
                     <h2 class="sub_heading">Try It Out!</h2>
                     <div class="input_field">
@@ -36,10 +39,23 @@
                         <a id="submit_image_button" class="">
                             Create Playlist
                         </a>
-                        <a id="facebook_image_button" class="">
+                        <a id="facebook_image_button" class="" onclick="loginToFb();">
                             Facebook Login
                         </a>
                     </div>
+                 </div>
+                 <div id="page2" class="page2">
+		    <div id="container">
+		        <img id="loading" src="static/loading.gif">
+		        <select multiple="multiple" class="image-picker show-html" id="photo-selector" style="width:100%;height:200px;">
+		        </select>
+		    </div>
+		    <div id="buttons">
+		        <input type="button" value="Select All" onclick="selectAll();">
+		        <input type="button" value="Deselect All" onclick="deselectAll();">
+		        <input type="button" value="Create Music Montage" onClick="makeMontage();">
+		    </div>
+		    <script language="JavaScript" type="text/javascript" src="static/index_fb.js"></script>
                 </div>
             </div>
             <!-- Page 3 displays the results-->
@@ -60,20 +76,9 @@
 
         </center>
     </div>
-    <script src="socket.io.js"></script>
-    <script src="main.js"></script>
+    <script src="static/socket.io.js"></script>
+    <script src="static/main.js"></script>
+    <script src="static/index_fb.js"></script>
 
 
 </body></html>
-=======
-  <head>
-  <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Example</title>
-  </head>
-  <body>
-    It works!
-
-    Test
-  </body>
-</head>
->>>>>>> dc2b4e04b5890f18c63104a312d4ce360326b7f0
