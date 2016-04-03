@@ -3,7 +3,7 @@ from gevent.wsgi import WSGIServer
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/static/', methods=['GET'])
 def index():
     return app.send_static_file('index.html')
 
