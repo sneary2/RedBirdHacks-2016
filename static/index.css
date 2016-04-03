@@ -1,0 +1,27 @@
+#container {
+  margin: 0;
+  background: rgba(102, 102, 102, 0.25);
+}
+#container, ul.image_picker_selector {
+  width: 100%;
+  height: 300px;
+}
+img.image_picker_image {
+  height: 200px;
+}
+#photo-selector {
+  display: none;
+}
+#loading {
+  position: fixed;
+  z-index: 10000;
+  left: calc(50% - 100px);
+  top: 50px;
+  width: 200px;
+  height: 200px;
+  display: none;
+}
+#buttons {
+  width: 100%;
+  text-align: center;
+}
